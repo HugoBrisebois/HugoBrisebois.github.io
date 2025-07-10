@@ -55,7 +55,9 @@
             border-radius: 100%;
         }
         #img2{
-            float: right;
+            position: relative;
+            float: left;
+            left: 2px;
         }
         footer{
             clear: both;
