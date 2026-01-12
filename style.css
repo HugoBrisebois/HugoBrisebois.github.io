@@ -1,221 +1,128 @@
  body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        section {
-            padding: 20px;
-        }
-        bottom {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        h2{
-            font-size: 80px;
-            text-align: center;
-        }
-        p{
-            font-size: large;
-        }
-        #intro{
-            position: static;
-            
-        }
-        #img1{
-            position: relative;
-            left: 10px;
-            float: left;
-            border-radius: 100%;
-        }
-        #img2{
-            position: relative;
-            float: left;
-            left: 2px;
-        }
-        footer{
-            clear: both;
-            text-align: center;
-        }
-        .card {
-            width: 190px;
-            height: 254px;
-            border-radius: 20px;
-            background: #f5f5f5;
-            position: relative;
-            padding: 1.8rem;
-            border: 2px solid #c3c6ce;
-            transition: 0.5s ease-out;
-            overflow: visible;
-            left: 30px;
-            float: left;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
-    .card-details {
+.center{
+    text-align: center;
+}
+
+/* Nav bar*/
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 20px;
+}
+
+bottom {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h2{
+    font-size: 80px;
+    text-align: center;
+}
+
+p{
+    font-size: large;
+}
+
+#intro{
+    position: static;           
+}
+
+#img1{
+    position: relative;
+    left: 10px;
+    float: left;
+    border-radius: 100%;
+}
+
+#img2{
+    position: relative;
+    float: left;
+    left: 2px;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+}
+.card {
+        width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    left: 30px;
+    float: left;
+}
+
+.card-details {
     color: black;
     height: 100%;
-        gap: .5em;
-        display: grid;
-        place-content: center;
-    }
-
-    .card-button {
-        transform: translate(-50%, 125%);
-        width: 60%;
-        border-radius: 1rem;
-        border: none;
-        background-color: #008bf8;
-        color: #fff;
-        font-size: 1rem;
-        padding: .5rem 1rem;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        opacity: 0;
-        transition: 0.3s ease-out;
-    }
-
-    .text-body {
-        color: rgb(134, 134, 134);
-    }
-
-/*Text*/
-    .text-title {
-        font-size: 1.5em;
-        font-weight: bold;
-    }
-
-/*Hover*/
-    .card:hover {
-        border-color: #008bf8;
-        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-    }
-
-    .card:hover .card-button {
-        transform: translate(-50%, 50%);
-        opacity: 1;
-    }
-
-    /* Reset and basic styling */
-
-    .timeline-title {
-        font-weight: bold;
-        color: #00bfff;
-        position: relative;
-    }
-
-    .timeline-title::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: #00bfff;
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-    }
-
-/* Timeline */
-    .timeline {
-        position: relative;
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 10px 20px;
-    }
-
-    .timeline::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 0;
-        bottom: 0;
-        width: 4px;
-        background: #00bfff;
-        transform: translateX(-50%);
-    }
-
-    .timeline-item {
-        position: relative;
-        width: 50%;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    .timeline-item:nth-child(odd) {
-        left: 0;
-    }
-
-    .timeline-item:nth-child(even) {
-        left: 50%;
-    }
-
-    .timeline-content {
-        background: #fff;
-        padding: 15px 25px;
-        border-radius: 8px;
-        position: relative;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .timeline-item::before {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: #00bfff;
-        border-radius: 50%;
-        top: 20px;
-        left: -10px;
-        z-index: 1;
-    }
-
-    .timeline-item:nth-child(even)::before {
-        left: auto;
-        right: -10px;
-    }
-
-/* Responsive */
-    @media screen and (max-width: 768px){
-        .timeline::before {
-            left: 8px;
-        }
-
-        .timeline-item,
-        .timeline-item:nth-child(even),
-        .timeline-item:nth-child(odd) {
-            width: 100%;
-            padding-left: 30px;
-            left: 0 !important;
-        }
-
-        .timeline-item::before {
-            left: 0;
-            right: auto;
-        }
+    gap: .5em;
+    display: grid;
+    place-content: center;
 }
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.text-body {
+    color: rgb(134, 134, 134);
+}
+/*Text*/
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
