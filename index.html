@@ -12,8 +12,8 @@
         <p class="subtitle">Tech Enthusiast & Student</p>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
         <a href="contact.html">Contact Me</a>
     </nav>
 
@@ -21,77 +21,237 @@
         <section class="hero">
             <div class="hero-content">
                 <img src="hugo Brisebois.jpg" alt="a picture of myself">
-                <div class="hero-text">
+                <div class="hero-text" id="about">
                     <h2>Welcome to my Portfolio</h2>
                     <div class="center">
-                        <p class="intro-text">Hi, i am a canadian student and i enjoy coding prjects as well as making hardware projects</p>
+                        <p class="intro-text">Hi, I am a Canadian student and I enjoy coding projects as well as making hardware projects. 
+                            I love playing around with Raspberry Pi's™ (a tiny mini pc) and I love to build software</p>
+
+                        <div class="skills">
+                            <h3>What I work with</h3>
+                            <ul>
+                                <li>Raspberry Pi development</li>
+                                <li>Web development</li>
+                                <li>Python Programming</li>
+                                <li>Hardware (making PCBs and electronics)</li>
+                                <li>Adobe software (Photoshop, Illustrator & After Effects)</li>
+                                <li>Unity</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="about-preview">
-            <h3>A little About me</h3>
-            <p>I am a canadian student and i love to develope software and design hardware projects</p>
+            <h3>A Little About Me</h3>
+            <p>I am a Canadian student and I love to develop software and design hardware projects</p>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h3>My Projects</h3>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                <button class="filter-btn" data-filter="game">Games</button>
+            </div>
+
+            <!-- Project Count Display -->
+            <div class="project-count">
+                <p>Showing <span id="count">5</span> projects</p>
+            </div>
+
             <div class="project-grid">
-                <div class="card">
+                <div class="card" data-category="software game">
+                    <div class="card-header">
+                        <span class="card-number">01</span>
+                        <div class="tags">
+                            <span class="project-tag">Software</span>
+                            <span class="project-tag">Simulation</span>
+                        </div>
+                    </div>
                     <div class="card-details">
-                        <p class="text-title">bacteria Simulator</p>
+                        <p class="text-title">Bacteria Simulator</p>
                         <p class="text-body">A project meant to showcase a bacteria's expansion with a few other tweaks.</p>
                     </div>
-                    <a href="https://github.com/HugoBrisebois/bactiria-simulator">
-                        <button class="card-button">Visit the Github repo</button>
-                    </a>
+                    <div class="card-footer">
+                        <a href="https://github.com/HugoBrisebois/bactiria-simulator" class="card-link">
+                            <button class="card-button">
+                                <span>View Project</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="card">
+                <div class="card" data-category="software game">
+                    <div class="card-header">
+                        <span class="card-number">02</span>
+                        <div class="tags">
+                            <span class="project-tag">Game</span>
+                            <span class="project-tag">Software</span>
+                        </div>
+                    </div>
                     <div class="card-details">
                         <p class="text-title">Space Game</p>
                         <p class="text-body">A simple game where you complete quests and collect materials to complete the game.</p>
                     </div>
-                    <a href="https://github.com/HugoBrisebois/spacegame">
-                        <button class="card-button">More info</button>
-                    </a>
+                    <div class="card-footer">
+                        <a href="https://github.com/HugoBrisebois/spacegame" class="card-link">
+                            <button class="card-button">
+                                <span>View Project</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="card">
+                <div class="card" data-category="software">
+                    <div class="card-header">
+                        <span class="card-number">03</span>
+                        <div class="tags">
+                            <span class="project-tag">Software</span>
+                            <span class="project-tag">Security</span>
+                        </div>
+                    </div>
                     <div class="card-details">
                         <p class="text-title">Password Manager</p>
                         <p class="text-body">A simple password manager that is NOT built for commercial use.</p>
                     </div>
-                    <a href="https://github.com/HugoBrisebois/password-manager">
-                        <button class="card-button">More info</button>
-                    </a>
+                    <div class="card-footer">
+                        <a href="https://github.com/HugoBrisebois/password-manager" class="card-link">
+                            <button class="card-button">
+                                <span>View Project</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="card">
+                <div class="card" data-category="hardware software">
+                    <div class="card-header">
+                        <span class="card-number">04</span>
+                        <div class="tags">
+                            <span class="project-tag">Hardware</span>
+                            <span class="project-tag">Raspberry Pi</span>
+                        </div>
+                    </div>
                     <div class="card-details">
                         <p class="text-title">Raspberry Pi E-reader</p>
                         <p class="text-body">A simple app built for online reading optimized for the Raspberry Pi 3B.</p>
                     </div>
-                    <a href="https://github.com/HugoBrisebois/raspberrypi_ereaderapp">
-                        <button class="card-button">More info</button>
-                    </a>
+                    <div class="card-footer">
+                        <a href="https://github.com/HugoBrisebois/raspberrypi_ereaderapp" class="card-link">
+                            <button class="card-button">
+                                <span>View Project</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="card">
+                <div class="card" data-category="web">
+                    <div class="card-header">
+                        <span class="card-number">05</span>
+                        <div class="tags">
+                            <span class="project-tag">Web</span>
+                            <span class="project-tag">HTML/CSS</span>
+                        </div>
+                    </div>
                     <div class="card-details">
                         <p class="text-title">E-Portfolio</p>
                         <p class="text-body">A simple website made to showcase some of my projects and tell you a little about me.</p>
                     </div>
-                    <a href="https://github.com/HugoBrisebois/HugoBrisebois.github.io">
-                        <button class="card-button">More info</button>
-                    </a>
+                    <div class="card-footer">
+                        <a href="https://github.com/HugoBrisebois/HugoBrisebois.github.io" class="card-link">
+                            <button class="card-button">
+                                <span>View Project</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
-                
         </section>
     </main>
+    
     <footer>
         <p>&copy; 2025 Hugo Brisebois. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Project Filter Functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.card');
+        const projectCount = document.getElementById('count');
+
+        function updateProjectCount() {
+            const visibleCards = document.querySelectorAll('.card[style*="flex"]').length;
+            const totalVisible = Array.from(projectCards).filter(card => 
+                card.style.display !== 'none'
+            ).length;
+            projectCount.textContent = totalVisible;
+        }
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filterValue === 'all') {
+                        card.style.display = 'flex';
+                        card.style.animation = 'fadeIn 0.5s ease-in';
+                    } else {
+                        const categories = card.getAttribute('data-category');
+                        if (categories.includes(filterValue)) {
+                            card.style.display = 'flex';
+                            card.style.animation = 'fadeIn 0.5s ease-in';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+
+                // Update count after filtering
+                setTimeout(updateProjectCount, 50);
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Initialize count on page load
+        updateProjectCount();
+    </script>
 </body>
+</html>
