@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Hugo Brisebois ePortfolio</title>
-		<link>https://example.org/</link>
+		<link>http://localhost:1313/</link>
 		<description>Recent content on Hugo Brisebois ePortfolio</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,40 +12,40 @@
 		
 			<lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Building an ePortfolio with Hugo</title>
-				<link>https://example.org/blog/post1/</link>
+				<link>http://localhost:1313/blog/post1/</link>
 				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://example.org/blog/post1/</guid>
+				<guid>http://localhost:1313/blog/post1/</guid>
 				<description>A practical guide to structuring a portfolio site with projects and blog posts in Hugo.</description>
 			</item>
 			<item>
 				<title>Mando Quest</title>
-				<link>https://example.org/projects/project1/</link>
+				<link>http://localhost:1313/projects/project1/</link>
 				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://example.org/projects/project1/</guid>
+				<guid>http://localhost:1313/projects/project1/</guid>
 				<description>A portfolio project showcasing a narrative game design and custom visuals.</description>
 			</item>
 			<item>
 				<title>My Creative Workflow</title>
-				<link>https://example.org/blog/post2/</link>
+				<link>http://localhost:1313/blog/post2/</link>
 				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://example.org/blog/post2/</guid>
+				<guid>http://localhost:1313/blog/post2/</guid>
 				<description>How I organize project assets, ideas, and development milestones for portfolio work.</description>
 			</item>
 			<item>
 				<title>Password Vault</title>
-				<link>https://example.org/projects/project3/</link>
+				<link>http://localhost:1313/projects/project3/</link>
 				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://example.org/projects/project3/</guid>
+				<guid>http://localhost:1313/projects/project3/</guid>
 				<description>A secure app mockup for password management</description>
 			</item>
 			<item>
 				<title>Unity Arcade</title>
-				<link>https://example.org/projects/project2/</link>
+				<link>http://localhost:1313/projects/project2/</link>
 				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://example.org/projects/project2/</guid>
+				<guid>http://localhost:1313/projects/project2/</guid>
 				<description>A Unity-based game project with polished UI and gameplay flow.</description>
 			</item>
 	</channel>
