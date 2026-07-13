@@ -14,6 +14,20 @@
 		
 			<atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
 			<item>
+				<title>20 Dollar Bill</title>
+				<link>http://localhost:1313/projects/project5/</link>
+				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/project5/</guid>
+				<description>Design study / render of a stylized 20 dollar bill</description>
+			</item>
+			<item>
+				<title>Andor Poster</title>
+				<link>http://localhost:1313/projects/project10/</link>
+				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/project10/</guid>
+				<description>Fan poster / artwork for Andor</description>
+			</item>
+			<item>
 				<title>Custom Keyboard</title>
 				<link>http://localhost:1313/projects/project4/</link>
 				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
@@ -33,6 +47,13 @@
 				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/projects/project3/</guid>
 				<description>A secure app mockup for password management</description>
+			</item>
+			<item>
+				<title>Space Game</title>
+				<link>http://localhost:1313/projects/project19/</link>
+				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/project19/</guid>
+				<description>A space-themed game project or concept</description>
 			</item>
 			<item>
 				<title>Unity Arcade</title>
