@@ -1,0 +1,43 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Hugo Brisebois ePortfolio'
+disableKinds = ['taxonomy', 'taxonomyTerm']
+paginate = 6
+
+[params]
+  author = 'Hugo Brisebois'
+  subtitle = 'Developer, designer, and creator'
+  description = 'A Hugo-based ePortfolio showcasing projects, blog posts, and creative work.'
+  heroHeadline = 'Hi, I’m Hugo. I build experiences, games, and digital tools.'
+  heroSubtext = 'Explore my projects, read my blog, and learn more about my work.'
+  keywords = ['portfolio', 'blog', 'projects', 'Hugo', 'developer']
+
+[[menu.main]]
+  identifier = 'home'
+  name = 'Home'
+  url = '/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'projects'
+  name = 'Projects'
+  url = '/projects/'
+  weight = 20
+
+[[menu.main]]
+  identifier = 'blog'
+  name = 'Blog'
+  url = '/blog/'
+  weight = 30
+
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  url = '/about/'
+  weight = 40
+
+[[menu.main]]
+  identifier = 'contact'
+  name = 'Contact'
+  url = '/contact/'
+  weight = 50

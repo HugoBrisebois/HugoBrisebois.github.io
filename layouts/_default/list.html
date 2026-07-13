@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="container section-list">
+  <header class="section-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <div class="grid grid-3">
+    {{ range .Pages }}
+    <article class="card">
+      <a href="{{ .RelPermalink }}">
+        {{ if eq .Section "projects" }}
+          {{ with index .Params.images 0 }}<img src="{{ . | relURL }}" alt="{{ $.Title }}" />{{ end }}
+        {{ end }}
+        <div class="card-content">
+          <h2>{{ .Title }}</h2>
+          <p>{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+          {{ if .Date }}<span>{{ .Date.Format "Jan 2, 2006" }}</span>{{ end }}
+        </div>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

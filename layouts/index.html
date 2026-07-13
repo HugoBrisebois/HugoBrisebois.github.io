@@ -1,0 +1,56 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <p class="eyebrow">{{ .Site.Params.subtitle }}</p>
+      <h1>{{ .Site.Params.heroHeadline }}</h1>
+      <p>{{ .Site.Params.heroSubtext }}</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="{{ "/projects/" | relURL }}">View Projects</a>
+        <a class="btn-secondary" href="{{ "/blog/" | relURL }}">Read Blog</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="{{ "images/eportfolio.png" | relURL }}" alt="ePortfolio showcase" />
+    </div>
+  </div>
+</section>
+
+<section class="preview-block">
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <div class="grid grid-3">
+      {{ range first 3 (where .Site.RegularPages "Section" "projects") }}
+      <article class="card">
+        <a href="{{ .RelPermalink }}">
+          {{ with index .Params.images 0 }}<img src="{{ . | relURL }}" alt="{{ $.Title }}" />{{ end }}
+          <div class="card-content">
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Params.summary }}</p>
+          </div>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="preview-block alt-bg">
+  <div class="container">
+    <h2>Latest Blog Posts</h2>
+    <div class="grid grid-3">
+      {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+      <article class="card">
+        <a href="{{ .RelPermalink }}">
+          <div class="card-content">
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Summary }}</p>
+            <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+          </div>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
