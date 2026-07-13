@@ -19,7 +19,9 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build site
-        run: hugo --minify
+        env:
+          HUGO_ENV: production
+        run: hugo --minify --environment production
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
