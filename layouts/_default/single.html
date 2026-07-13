@@ -1,19 +1,28 @@
 {{ define "main" }}
-<article class="post-single container">
+<article class="post-single container{{ if eq .Section "projects" }} project-single{{ end }}">
   <header class="post-header">
     <h1>{{ .Title }}</h1>
     <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
     {{ with .Params.subtitle }}<p class="post-subtitle">{{ . }}</p>{{ end }}
   </header>
-  <div class="post-body">
-    {{ .Content }}
-  </div>
+
   {{ if eq .Section "projects" }}
   {{ $imageCount := len .Params.images }}
-  <div class="project-gallery{{ if eq $imageCount 1 }} project-gallery-single{{ end }}">
-    {{ range .Params.images }}
-      <img src="{{ . | relURL }}" alt="{{ $.Title }}" />
-    {{ end }}
+  <div class="project-detail-grid">
+    <div class="project-description">
+      <div class="post-body">
+        {{ .Content }}
+      </div>
+    </div>
+    <div class="project-gallery{{ if eq $imageCount 1 }} project-gallery-single{{ end }}">
+      {{ range .Params.images }}
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}" />
+      {{ end }}
+    </div>
+  </div>
+  {{ else }}
+  <div class="post-body">
+    {{ .Content }}
   </div>
   {{ end }}
 </article>
