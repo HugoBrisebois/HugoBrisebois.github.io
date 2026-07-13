@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Hugo Brisebois ePortfolio'
 disableKinds = ['taxonomy', 'taxonomyTerm']
 paginate = 6
+relativeURLs = true
+canonifyURLs = false
 
 [params]
   author = 'Hugo Brisebois'

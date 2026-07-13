@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/projects/project5/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project6/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project10/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blog/</loc>
     <lastmod>2026-07-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,10 +20,28 @@
     <loc>http://localhost:1313/projects/project4/</loc>
     <lastmod>2026-07-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/projects/project12/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project13/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project14/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project11/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project7/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/project1/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project15/</loc>
     <lastmod>2026-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/post2/</loc>
@@ -23,10 +50,31 @@
     <loc>http://localhost:1313/projects/project3/</loc>
     <lastmod>2026-07-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/projects/project8/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2026-07-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/projects/project16/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project17/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project18/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project19/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project20/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/projects/project2/</loc>
+    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/project9/</loc>
     <lastmod>2026-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
