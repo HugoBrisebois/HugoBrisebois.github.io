@@ -4,6 +4,11 @@
     <h1>{{ .Title }}</h1>
     <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
     {{ with .Params.subtitle }}<p class="post-subtitle">{{ . }}</p>{{ end }}
+    {{ if and (eq .Section "projects") .Params.tags }}
+    <div class="project-card-tags post-tags">
+      {{ range .Params.tags }}<span class="tag-pill">{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
   </header>
 
   {{ if eq .Section "projects" }}

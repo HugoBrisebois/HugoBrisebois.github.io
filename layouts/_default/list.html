@@ -4,9 +4,26 @@
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
-  <div class="grid grid-3">
+  {{ if eq .Section "projects" }}
+  {{ $allTags := slice }}
+  {{ range .Pages }}
+    {{ range .Params.tags }}
+      {{ if not (in $allTags .) }}{{ $allTags = $allTags | append . }}{{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $allTags = sort $allTags }}
+  <div class="tag-filter-bar">
+    <button class="tag-filter active" data-filter="all">All Projects</button>
+    {{ range $allTags }}
+      <button class="tag-filter" data-filter="{{ . | urlize }}">{{ . }}</button>
+    {{ end }}
+  </div>
+  {{ end }}
+  <div class="grid grid-3 project-grid">
     {{ range .Pages }}
-    <article class="card">
+    {{ $tagList := slice }}
+    {{ range .Params.tags }}{{ $tagList = $tagList | append (urlize .) }}{{ end }}
+    <article class="card project-card" data-tags="{{ delimit $tagList "," }}">
       <a href="{{ .RelPermalink }}">
         {{ if eq .Section "projects" }}
           {{ with index .Params.images 0 }}<img src="{{ . | relURL }}" alt="{{ $.Title }}" />{{ end }}
@@ -14,6 +31,11 @@
         <div class="card-content">
           <h2>{{ .Title }}</h2>
           <p>{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+          {{ if .Params.tags }}
+          <div class="project-card-tags">
+            {{ range .Params.tags }}<span class="tag-pill">{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
           {{ if .Date }}<span>{{ .Date.Format "Jan 2, 2006" }}</span>{{ end }}
         </div>
       </a>
