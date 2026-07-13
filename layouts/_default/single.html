@@ -9,7 +9,8 @@
     {{ .Content }}
   </div>
   {{ if eq .Section "projects" }}
-  <div class="project-gallery">
+  {{ $imageCount := len .Params.images }}
+  <div class="project-gallery{{ if eq $imageCount 1 }} project-gallery-single{{ end }}">
     {{ range .Params.images }}
       <img src="{{ . | relURL }}" alt="{{ $.Title }}" />
     {{ end }}

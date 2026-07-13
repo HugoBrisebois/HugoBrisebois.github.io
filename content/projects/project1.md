@@ -1,9 +1,9 @@
 +++
-title = "Mando Quest"
+title = "Mando Poster"
 date = 2026-07-13
 draft = false
-summary = "A portfolio project showcasing a narrative game design and custom visuals."
-images = ["/images/mando-1.png", "/images/andor-1.png", "/images/sull-1.png"]
+summary = "A Photoshop project meant to show various techniques in photoshop."
+images = ["/images/mando-1.png"]
 +++
 
-Designed a narrative-driven experience with custom character art and immersive interface design.
+A Film Poster meant to display various techniques in Photoshop.
