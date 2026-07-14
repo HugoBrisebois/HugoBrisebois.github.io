@@ -1,0 +1,164 @@
+{
+  "projects": [
+    {
+      "id": "project1",
+      "title": "Mando Poster",
+      "description": "A Photoshop project meant to show various techniques in photoshop.",
+      "image": "mando-1.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project2",
+      "title": "Unity Arcade",
+      "description": "A Unity-based game project built to learn the basics of Unity.",
+      "image": "unity.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project3",
+      "title": "Password Vault",
+      "description": "An app mockup for password management",
+      "image": "password.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project4",
+      "title": "Custom Keyboard",
+      "description": "A fully custom keyboard built around the raspberrypi pico and kailh choc keyswitches",
+      "image": "render.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project5",
+      "title": "20 Dollar Bill",
+      "description": "Design of a stylized 20 dollar bill",
+      "image": "20dollarbill.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project6",
+      "title": "3 Dots Pattern Brush",
+      "description": "Brush/pattern asset created for digital illustrations",
+      "image": "3dots pattern brush-1.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project7",
+      "title": "Ford GT Render",
+      "description": "Photoshop Poster of a Ford GT",
+      "image": "Ford-gt-1.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project8",
+      "title": "Porsche 911 GT3 RS Outline",
+      "description": "Line-art / outline of a Porsche 911 GT3 RS",
+      "image": "Porsche-911-GT3-RS-outline-1.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project9",
+      "title": "X-Men Wolverine Illustration",
+      "description": "photoshop slice effect of an Xmen poster",
+      "image": "Xmen Wolverine-1.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project10",
+      "title": "Andor Poster",
+      "description": "Fan poster and topography lesson of Andor for photoshop",
+      "image": "andor-1.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project11",
+      "title": "Emoji Set",
+      "description": "A set of emoji/icon graphics",
+      "image": "emoji3-1.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project12",
+      "title": "E-Reader Mockup",
+      "description": "Mockup of an e-reader interface or app",
+      "image": "ereader.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project13",
+      "title": "EDGE Logo",
+      "description": "Logo design exploration for the iCan rebranding",
+      "image": "logo EDGE.jpg",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project14",
+      "title": "Minecraft Character",
+      "description": "Character render of Minecraft cahracter",
+      "image": "minecraft_character.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project15",
+      "title": "Red Dead Redemption Art",
+      "description": "Fan art inspired by Red Dead Redemption",
+      "image": "reddead-redemption-1.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project16",
+      "title": "Distrubuted cell Simulation Project",
+      "description": "A simulation-focused project mockup for cell expansoin",
+      "image": "sim.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project17",
+      "title": "Slice Photoshop effect",
+      "description": "A Photoshop effect mockup",
+      "image": "slice-1.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project18",
+      "title": "Space Game",
+      "description": "A space-themed game concept",
+      "image": "spacegame.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+      "id": "project19",
+      "title": "Skull Illustration",
+      "description": "An illustration labeled 'Skull'",
+      "image": "sull-1.png",
+      "date": "Jul 13, 2026",
+      "tags": []
+    },
+    {
+        "id": "project20",
+        "title": "E-portfolio",
+        "description": "A web portfolio where i am able to display my projects",
+        "image": "eportfolio.png",
+        "date":"Jul 13, 2026",
+        "tags": []
+    }
+  ]
+}
