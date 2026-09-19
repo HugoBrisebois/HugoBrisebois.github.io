@@ -1,0 +1,24 @@
+[[main]]
+name = 'Home'
+url = '/'
+weight = 10
+
+[[main]]
+name = 'Projects'
+url = '/projects/'
+weight = 20
+
+[[main]]
+name = 'Blog'
+url = '/blog/'
+weight = 30
+
+[[main]]
+name = 'About'
+url = '/about/'
+weight = 40
+
+[[main]]
+name = 'Contact'
+url = '/contact/'
+weight = 50

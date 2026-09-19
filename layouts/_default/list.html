@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="container section-list">
+  <header class="section-header">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+  </header>
+  <div class="grid grid-3 project-grid">
+    {{ range .Pages }}
+      <article class="card">
+        <a href="{{ .RelPermalink }}">
+          <div class="card-content">
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Description | default .Summary }}</p>
+            <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+          </div>
+        </a>
+      </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

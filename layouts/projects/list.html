@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="container section-list">
+  <header class="section-header">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+  </header>
+  {{ $tags := slice }}
+  {{ range .Pages }}{{ range .Params.tags }}{{ $tags = $tags | append . }}{{ end }}{{ end }}
+  {{ $tags = $tags | uniq | sort }}
+  <div class="tag-filter-bar" id="tagFilterBar">
+    <button class="tag-filter active" data-filter="all" type="button">All Projects</button>
+    {{ range $tags }}<button class="tag-filter" data-filter="{{ . }}" type="button">{{ . }}</button>{{ end }}
+  </div>
+  <div class="grid grid-3 project-grid" id="projectGrid">
+    {{ range .Pages }}{{ partial "project-card.html" . }}{{ end }}
+  </div>
+</div>
+<script src="{{ "js/project-filter.js" | relURL }}" defer></script>
+{{ end }}

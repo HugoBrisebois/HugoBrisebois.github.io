@@ -1,53 +1,45 @@
 # Project Management Guide
 
-This directory uses a clean, data-driven architecture for managing portfolio projects.
+This site uses Hugo content and templates for managing portfolio projects.
 
 ## Architecture
 
 ```
-projects/
-├── index.html          → Main page template (loads projects dynamically)
-├── project1/
-│   └── index.html      → Individual project detail pages
-├── project2/
-│   └── index.html
+content/projects/
+├── _index.md            → Projects section metadata
+├── project1.md          → Project detail content and front matter
 └── ... (20 projects)
 
-data/
-└── projects.json       → Single source of truth for all project metadata
+layouts/projects/
+├── list.html             → Project listing and tag filters
+└── single.html           → Individual project detail page
 
-js/
-├── projects-loader.js  → Loads JSON and renders project cards
-└── project-filter.js   → Handles tag-based filtering
+static/images/            → Project assets
 ```
 
 ## Adding a New Project
 
-1. **Update `data/projects.json`**:
-   ```json
-   {
-     "id": "projectX",
-     "title": "Project Title",
-     "description": "Brief description",
-     "image": "image-filename.png",
-     "date": "Jul 13, 2026",
-     "tags": ["design", "illustration"]
-   }
+1. **Create `content/projects/projectX.md`**:
+  ```yaml
+   ---
+   title: Project Title
+   description: Brief description
+   date: 2026-07-13
+   image: image-filename.png
+   featured: false
+   tags: [design, illustration]
+   ---
+
+   Project details go here.
    ```
 
-2. **Create project detail page** (optional):
-   ```bash
-   mkdir -p projects/projectX
-   # Create projects/projectX/index.html for project detail page
-   ```
+2. **Add image** to `static/images/`.
 
-3. **Add image** to `images/` folder
-
-4. **Done!** The project automatically appears on the main projects page
+3. **Run `hugo server`** to preview the site.
 
 ## Modifying a Project
 
-Simply edit the relevant entry in `data/projects.json`. Changes appear immediately:
+Edit the relevant Markdown file. Changes appear immediately:
 - Update title, description, or date
 - Add/remove tags for filtering
 - Change image reference
@@ -57,7 +49,7 @@ Simply edit the relevant entry in `data/projects.json`. Changes appear immediate
 Add tags to enable category filtering on the projects page:
 
 ```json
-"tags": ["design", "3d", "photoshop"]
+tags: [design, 3d, photoshop]
 ```
 
 Filter buttons are automatically generated from unique tags across all projects.
@@ -74,10 +66,10 @@ Filter buttons are automatically generated from unique tags across all projects.
 
 ## Code Quality
 
-- **Separation of concerns**: Data (JSON) → Logic (JS) → Presentation (HTML)
+- **Separation of concerns**: Content (Markdown) → Templates (Hugo) → Presentation (HTML/CSS)
 - **No code duplication**: Project info in one place only
 - **Maintainable**: Easy to scale to 50+ projects
-- **Performant**: Single fetch request loads all projects
+- **Performant**: Project pages are rendered at build time
 - **Accessible**: Semantic HTML with proper alt text
 
 ## CSS Classes
@@ -90,15 +82,15 @@ Filter buttons are automatically generated from unique tags across all projects.
 ## Troubleshooting
 
 **Projects not showing?**
-- Check `data/projects.json` syntax (must be valid JSON)
-- Verify image file exists and filename matches
-- Check browser console for fetch errors
+- Check the Markdown front matter
+- Verify the image exists in `static/images/` and the filename matches
+- Check the generated page for template errors
 
 **Images not loading?**
-- Verify filename in JSON matches image file exactly
+- Verify the filename in front matter matches the image file exactly
 - Check case sensitivity (`Mando-1.png` ≠ `mando-1.png`)
-- Ensure image is in `images/` folder
+- Ensure the image is in `static/images/`
 
 **Filters not working?**
-- Ensure `projects-loader.js` loads before `project-filter.js`
+- Ensure the generated project cards have matching `data-tags` values
 - Check that projects have `data-tags` attribute set

@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <p class="eyebrow">Developer, designer, and creator</p>
+      <h1>Hi, I’m Hugo. I build experiences, games, and digital tools.</h1>
+      <p>Explore my projects, read my blog, and learn more about my work.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="{{ "projects/" | relURL }}">View Projects</a>
+        <a class="btn-secondary" href="{{ "blog/" | relURL }}">Read Blog</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="{{ "images/eportfolio.png" | relURL }}" alt="ePortfolio showcase">
+    </div>
+  </div>
+</section>
+<section class="preview-block">
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <div class="grid grid-3">
+      {{ range where site.RegularPages "Params.featured" true }}
+        {{ partial "project-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+<section class="preview-block alt-bg">
+  <div class="container">
+    <h2>Latest Blog Posts</h2>
+    <div class="grid grid-3">
+      {{ range first 3 (where site.RegularPages "Section" "blog") }}
+        <article class="card">
+          <a href="{{ .RelPermalink }}">
+            <div class="card-content">
+              <h3>{{ .Title }}</h3>
+              <p>{{ .Description | default .Summary }}</p>
+              <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+            </div>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,15 @@
+<article class="card project-card" data-tags="{{ delimit .Params.tags " " }}">
+  <a href="{{ .RelPermalink }}">
+    {{ with .Params.image }}<img src="{{ printf "images/%s" . | relURL }}" alt="{{ $.Title }}">{{ end }}
+    <div class="card-content">
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Description | default .Summary }}</p>
+      <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+      {{ with .Params.tags }}
+        <div class="project-card-tags">
+          {{ range . }}<span class="tag-pill">{{ . }}</span>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </a>
+</article>
