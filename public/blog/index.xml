@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Blog on Hugo Brisebois ePortfolio</title>
-		<link>http://localhost:1313/blog/</link>
+		<link>https://hugobrisebois.github.io/blog/</link>
 		<description>Recent content in Blog on Hugo Brisebois ePortfolio</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,19 +12,19 @@
 		
 			<lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://hugobrisebois.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Building an ePortfolio with Hugo</title>
-				<link>http://localhost:1313/blog/post1/</link>
+				<link>https://hugobrisebois.github.io/blog/post1/</link>
 				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/blog/post1/</guid>
+				<guid>https://hugobrisebois.github.io/blog/post1/</guid>
 				<description>&lt;p&gt;Creating a portfolio with Hugo lets you mix static pages, projects, and blog content in a fast, maintainable site.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-i-covered&#34;&gt;What I covered&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Designing a clean landing page&lt;/li&gt;&#xA;&lt;li&gt;Displaying featured projects with images&lt;/li&gt;&#xA;&lt;li&gt;Publishing blog posts alongside your work&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 			<item>
 				<title>My Creative Workflow</title>
-				<link>http://localhost:1313/blog/post2/</link>
+				<link>https://hugobrisebois.github.io/blog/post2/</link>
 				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/blog/post2/</guid>
+				<guid>https://hugobrisebois.github.io/blog/post2/</guid>
 				<description>&lt;p&gt;I use a mix of visual inspiration, asset libraries, and regular writing to keep projects moving.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Plan the concept&lt;/li&gt;&#xA;&lt;li&gt;Collect references and visuals&lt;/li&gt;&#xA;&lt;li&gt;Build prototypes quickly&lt;/li&gt;&#xA;&lt;li&gt;Reflect with blog updates&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 	</channel>

@@ -4,6 +4,7 @@
     <h1>{{ .Title }}</h1>
     <p>{{ .Description }}</p>
   </header>
+  {{ with .Content }}<div class="post-body section-content">{{ . }}</div>{{ end }}
   <div class="grid grid-3 project-grid">
     {{ range .Pages }}
       <article class="card">
