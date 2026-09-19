@@ -1,7 +1,6 @@
 baseURL = 'https://hugobrisebois.github.io/'
 locale = 'en-us'
 title = 'Hugo Brisebois ePortfolio'
-theme = ''
 publishDir = 'public'
 
 [params]
