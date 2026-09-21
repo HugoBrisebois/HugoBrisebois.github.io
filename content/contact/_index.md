@@ -3,7 +3,8 @@ title: Contact
 description: Get in touch with Hugo Brisebois.
 ---
 
-For questions about a project, collaboration ideas, or feedback on the portfolio, reach out through my GitHub profile:
+For questions about a project, collaboration ideas, or feedback on the portfolio, reach out through my GitHub profile: HugoBrisebois
+Or get in touch via email at: hugo.brisebois@outlook.com
 
 [Visit Hugo Brisebois on GitHub](https://github.com/HugoBrisebois)
 
