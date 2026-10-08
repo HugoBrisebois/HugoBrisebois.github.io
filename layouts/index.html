@@ -2,17 +2,18 @@
 <section class="hero">
   <div class="container hero-inner">
     <div>
-      <p class="eyebrow">Developer, designer, and creator</p>
-      <h1>Hi, I’m Hugo. I build experiences, games, and digital tools.</h1>
-      <p>Explore my projects, read my blog, and learn more about my work.</p>
+      <p class="eyebrow">Developer · maker · photographer</p>
+      <h1>Curious ideas, made real.</h1>
+      <p>I’m Hugo. I build digital tools, games, and hands-on projects, and bring a camera along for the ride.</p>
       <div class="hero-actions">
         <a class="btn-primary" href="{{ "projects/" | relURL }}">View Projects</a>
-        <a class="btn-secondary" href="{{ "blog/" | relURL }}">Read Blog</a>
+        <a class="btn-secondary" href="{{ "photos/" | relURL }}">Browse Photos</a>
       </div>
     </div>
-    <div class="hero-image">
-      <img src="{{ "images/eportfolio.png" | relURL }}" alt="ePortfolio showcase">
-    </div>
+    <figure class="hero-image">
+      <img src="{{ "images/render.png" | relURL }}" alt="Three-dimensional render of a custom keyboard project">
+      <figcaption>Designing a custom keyboard</figcaption>
+    </figure>
   </div>
 </section>
 <section class="preview-block">
@@ -23,6 +24,15 @@
         {{ partial "project-card.html" . }}
       {{ end }}
     </div>
+  </div>
+</section>
+<section class="photo-invitation">
+  <div class="container photo-invitation-inner">
+    <div>
+      <h2>Frames from outside the studio.</h2>
+      <p>A growing collection of places and moments seen through my camera.</p>
+    </div>
+    <a class="btn-secondary" href="{{ "photos/" | relURL }}">Explore photo albums</a>
   </div>
 </section>
 <section class="preview-block alt-bg">

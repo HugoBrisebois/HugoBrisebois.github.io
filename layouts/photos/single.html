@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ $photos := .Resources.ByType "image" }}
+<article class="container post-single photo-album">
+  <header class="post-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="post-subtitle">{{ . }}</p>{{ end }}
+    {{ with .Date }}<p class="post-meta">{{ .Format "Jan 2, 2006" }}</p>{{ end }}
+  </header>
+  {{ with .Content }}<div class="post-body photo-album-description">{{ . }}</div>{{ end }}
+  {{ if $photos }}
+    <div class="photo-gallery">
+      {{ range $index, $photo := $photos }}
+        <figure>
+          <img src="{{ $photo.RelPermalink }}" alt="{{ $photo.Title | default (printf "%s photo %d" $.Title (add $index 1)) }}" loading="lazy" decoding="async">
+          {{ with $photo.Params.caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+        </figure>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="photo-empty-state">This album has no photos yet.</p>
+  {{ end }}
+</article>
+{{ end }}

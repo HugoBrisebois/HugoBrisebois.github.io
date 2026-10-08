@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="container section-list">
+  <header class="section-header">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+  </header>
+  {{ $albums := .RegularPages.ByDate.Reverse }}
+  {{ if $albums }}
+    <div class="grid grid-3 photo-album-grid">
+      {{ range $albums }}
+        {{ $album := . }}
+        {{ $photos := $album.Resources.ByType "image" }}
+        {{ $cover := false }}
+        {{ with $album.Params.cover }}
+          {{ $cover = $album.Resources.GetMatch . }}
+        {{ end }}
+        {{ if not $cover }}
+          {{ with $photos }}{{ $cover = index . 0 }}{{ end }}
+        {{ end }}
+        <article class="card photo-album-card">
+          <a href="{{ $album.RelPermalink }}">
+            {{ with $cover }}<img src="{{ .RelPermalink }}" alt="{{ $album.Title }} album cover" loading="lazy">{{ end }}
+            <div class="card-content">
+              <h2>{{ $album.Title }}</h2>
+              <p>{{ $album.Description | default $album.Summary }}</p>
+              {{ with $album.Date }}<span>{{ .Format "Jan 2, 2006" }}</span>{{ end }}
+              <span>{{ len $photos }} {{ if eq (len $photos) 1 }}photo{{ else }}photos{{ end }}</span>
+            </div>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="photo-empty-state">No photo albums yet.</p>
+  {{ end }}
+</div>
+{{ end }}

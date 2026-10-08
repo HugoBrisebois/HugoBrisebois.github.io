@@ -94,3 +94,36 @@ Filter buttons are automatically generated from unique tags across all projects.
 **Filters not working?**
 - Ensure the generated project cards have matching `data-tags` values
 - Check that projects have `data-tags` attribute set
+
+## Adding a Photo Album
+
+Create a page bundle for each album and place its photos alongside `index.md`:
+
+```
+content/photos/
+└── coastal-walk/
+  ├── index.md
+  ├── beach.jpg
+  └── lighthouse.jpg
+```
+
+Add album details to `index.md`:
+
+```yaml
+---
+title: Coastal Walk
+date: 2026-08-12
+description: An afternoon along the coast.
+cover: lighthouse.jpg
+resources:
+  - src: lighthouse.jpg
+    params:
+      caption: The lighthouse above the shore.
+---
+
+Optional album notes go here.
+```
+
+All image files in the bundle appear in the album gallery. The `cover` value is optional; when omitted, the first image is used on the Photos listing. Add a `resources` entry for each image that needs metadata such as a caption.
+
+Run `hugo server` to preview the album at `/photos/coastal-walk/`.
