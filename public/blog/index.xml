@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Blog on Hugo Brisebois ePortfolio</title>
-		<link>http://localhost:1314/blog/</link>
+		<link>http://localhost:1313/blog/</link>
 		<description>Recent content in Blog on Hugo Brisebois ePortfolio</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1314/blog/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Building Curricel</title>
-				<link>http://localhost:1314/blog/post1/</link>
+				<link>http://localhost:1313/blog/post1/</link>
 				<pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1314/blog/post1/</guid>
+				<guid>http://localhost:1313/blog/post1/</guid>
 				<description>&lt;h2 id=&#34;what-is-curricel&#34;&gt;What is Curricel?&lt;/h2&gt;&#xA;&lt;p&gt;Curricel is a local AI powered student study buddy app built for edge device computation and helping students grasp what they don&amp;rsquo;t understand.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-the-tech-stack&#34;&gt;What is the tech stack?&lt;/h2&gt;&#xA;&lt;p&gt;Curricel is going to run on C# and leverage the llamaSharp library to make the latency between the models inference and the user prompt being sent as near to zero as possible. because llamasharp is built upon c++ and is natively compile in it, the app will leverage this performance to help edge devices like cpu bound laptops and older hardware have as much performance as possible. the app will also leverage sqlite databases to net zero ram usage as the app is running and will use the sqlite-vec extension to add vectorization and RAG to the application for better llm interactions and user expierence.&lt;/p&gt;</description>
 			</item>
 	</channel>
