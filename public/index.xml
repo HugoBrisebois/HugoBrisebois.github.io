@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Building Curricel</title>
+				<link>http://localhost:1313/blog/post1/</link>
+				<pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/blog/post1/</guid>
+				<description>&lt;h2 id=&#34;what-is-curricel&#34;&gt;What is Curricel?&lt;/h2&gt;&#xA;&lt;p&gt;Curricel is a local AI powered student study buddy app built for edge device computation and helping students grasp what they don&amp;rsquo;t understand.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-the-tech-stack&#34;&gt;What is the tech stack?&lt;/h2&gt;&#xA;&lt;p&gt;Curricel is going to run on C# and leverage the llamaSharp library to make the latency between the models inference and the user prompt being sent as near to zero as possible. because llamasharp is built upon c++ and is natively compile in it, the app will leverage this performance to help edge devices like cpu bound laptops and older hardware have as much performance as possible. the app will also leverage sqlite databases to net zero ram usage as the app is running and will use the sqlite-vec extension to add vectorization and RAG to the application for better llm interactions and user expierence.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>20 Dollar Bill</title>
 				<link>http://localhost:1313/projects/project5/</link>
@@ -33,13 +40,6 @@
 				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/projects/project10/</guid>
 				<description>&lt;p&gt;Fan poster and typography lesson for Andor in Photoshop.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Building an ePortfolio with Hugo</title>
-				<link>http://localhost:1313/blog/post1/</link>
-				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/blog/post1/</guid>
-				<description>&lt;p&gt;Creating a portfolio with Hugo lets you mix static pages, projects, and blog content in a fast, maintainable site.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-i-covered&#34;&gt;What I covered&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Designing a clean landing page&lt;/li&gt;&#xA;&lt;li&gt;Displaying featured projects with images&lt;/li&gt;&#xA;&lt;li&gt;Publishing blog posts alongside your work&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 			<item>
 				<title>Custom Keyboard</title>
